@@ -21,11 +21,10 @@
   --border2:rgba(255,255,255,0.12);
 }
 html{scroll-behavior:smooth}
-body{background:var(--navy);color:var(--light);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden;cursor:none}
+body{background:var(--navy);color:var(--light);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden}
 h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
 
-#cursor{position:fixed;width:12px;height:12px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s,opacity .3s;mix-blend-mode:screen}
-#cursor-glow{position:fixed;width:300px;height:300px;border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(0,240,255,0.06) 0%,transparent 70%);transition:transform .4s ease}
+
 
 #icon-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
 
@@ -303,8 +302,7 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
 <body>
 
 <canvas id="icon-canvas"></canvas>
-<div id="cursor"></div>
-<div id="cursor-glow"></div>
+
 
 <nav id="navbar">
   <div class="logo">Viphrud Technologies<span class="logo-dot">.</span></div>
@@ -512,7 +510,7 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
     <h2 class="section-title">Ready to Build Something<br><span class="gradient-text">Extraordinary?</span></h2>
     <p class="section-sub">Tell us about your project and we'll get back to you within 24 hours with a tailored proposal.</p>
     <div class="hero-btns" style="margin-top:2.5rem">
-      <a href="mailto:hello@viphrud.com" class="btn-primary">hello@viphrud.com</a>
+      <a href="/cdn-cgi/l/email-protection#ddb5b8b1b1b29dabb4adb5afa8b9f3beb2b0" class="btn-primary"><span class="__cf_email__" data-cfemail="a7cfc2cbcbc8e7d1ced7cfd5d2c389c4c8ca">[email&#160;protected]</span></a>
       <a href="tel:+91 9148728776" class="btn-ghost">📞 Call Us</a>
     </div>
   </div>
@@ -538,19 +536,10 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
 
-  /* ── CUSTOM CURSOR ── */
-  const cursor=document.getElementById('cursor');
-  const glow=document.getElementById('cursor-glow');
-  let mx=0,my=0,gx=0,gy=0;
-  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px'});
-  (function animGlow(){gx+=(mx-gx)*.08;gy+=(my-gy)*.08;glow.style.left=gx+'px';glow.style.top=gy+'px';requestAnimationFrame(animGlow)})();
-  document.querySelectorAll('a,button').forEach(el=>{
-    el.addEventListener('mouseenter',()=>{cursor.style.transform='translate(-50%,-50%) scale(2.5)';cursor.style.opacity='.5'});
-    el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';cursor.style.opacity='1'});
-  });
+
 
   /* ── FLOATING TECH ICONS CANVAS ── */
   const canvas=document.getElementById('icon-canvas');
@@ -792,13 +781,3 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
   /* ── CARD MOUSE SPOTLIGHT ── */
   document.querySelectorAll('.service-card').forEach(card=>{
     card.addEventListener('mousemove',e=>{
-      const r=card.getBoundingClientRect();
-      card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
-      card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
-    });
-  });
-
-})();
-</script>
-</body>
-</html>
