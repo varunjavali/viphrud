@@ -24,8 +24,6 @@ html{scroll-behavior:smooth}
 body{background:var(--navy);color:var(--light);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden}
 h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
 
-
-
 #icon-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
 
 nav{
@@ -37,11 +35,11 @@ nav{
   transition:all .3s;
 }
 nav.scrolled{background:rgba(6,8,15,0.92);border-color:var(--border2)}
-.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:-1px;cursor:none}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:-1px}
 .logo-dot{color:var(--accent);display:inline-block;animation:pulse-dot 2s ease-in-out infinite}
 @keyframes pulse-dot{0%,100%{text-shadow:0 0 8px var(--accent)}50%{text-shadow:0 0 20px var(--accent),0 0 40px var(--accent)}}
 .nav-links{display:flex;gap:2.5rem;list-style:none}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s;letter-spacing:.3px;cursor:none;position:relative}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s;letter-spacing:.3px;position:relative}
 .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--accent);transition:width .3s}
 .nav-links a:hover{color:var(--accent)}
 .nav-links a:hover::after{width:100%}
@@ -51,7 +49,7 @@ nav.scrolled{background:rgba(6,8,15,0.92);border-color:var(--border2)}
   font-weight:600;font-size:.88rem;
   text-decoration:none;font-family:'Syne',sans-serif;
   border:1px solid rgba(0,240,255,0.4);
-  transition:all .3s;cursor:none;
+  transition:all .3s;
   position:relative;overflow:hidden;
 }
 .nav-cta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,240,255,0.1),rgba(168,85,247,0.1));opacity:0;transition:opacity .3s}
@@ -114,7 +112,7 @@ nav.scrolled{background:rgba(6,8,15,0.92);border-color:var(--border2)}
   color:var(--navy);padding:.9rem 2.2rem;border-radius:100px;
   font-weight:700;font-size:.95rem;text-decoration:none;
   font-family:'Syne',sans-serif;transition:all .3s;
-  box-shadow:0 0 30px rgba(0,240,255,0.3);cursor:none;
+  box-shadow:0 0 30px rgba(0,240,255,0.3);
   position:relative;overflow:hidden;
 }
 .btn-primary::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.2),transparent);opacity:0;transition:opacity .3s}
@@ -124,7 +122,7 @@ nav.scrolled{background:rgba(6,8,15,0.92);border-color:var(--border2)}
   border:1px solid var(--border2);color:var(--light);
   padding:.9rem 2.2rem;border-radius:100px;
   font-weight:500;font-size:.95rem;text-decoration:none;
-  transition:all .3s;cursor:none;backdrop-filter:blur(4px);
+  transition:all .3s;backdrop-filter:blur(4px);
 }
 .btn-ghost:hover{border-color:rgba(168,85,247,0.5);background:rgba(168,85,247,0.08);transform:translateY(-3px)}
 
@@ -176,7 +174,7 @@ section{padding:8rem 6%;position:relative;z-index:1}
 .service-card{
   background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;
   transition:all .4s cubic-bezier(.25,.8,.25,1);
-  position:relative;overflow:hidden;cursor:none;
+  position:relative;overflow:hidden;
 }
 .service-card::before{
   content:'';position:absolute;inset:0;opacity:0;transition:opacity .4s;
@@ -208,7 +206,7 @@ section{padding:8rem 6%;position:relative;z-index:1}
 .tech-pill{
   background:var(--card);border:1px solid var(--border);border-radius:100px;
   padding:.6rem 1.4rem;font-size:.85rem;font-weight:500;white-space:nowrap;
-  display:flex;align-items:center;gap:.6rem;cursor:none;
+  display:flex;align-items:center;gap:.6rem;
   transition:all .3s;flex-shrink:0;
 }
 .tech-pill:hover{border-color:rgba(168,85,247,0.5);background:rgba(168,85,247,0.08);transform:scale(1.05)}
@@ -274,7 +272,7 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
 .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem}
 .footer-logo span{color:var(--accent)}
 .footer-links{display:flex;gap:2rem;list-style:none}
-.footer-links a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s;cursor:none}
+.footer-links a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
 .footer-links a:hover{color:var(--accent)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:2rem;border-top:1px solid var(--border)}
 .footer-bottom p{color:var(--muted);font-size:.8rem}
@@ -284,7 +282,7 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
   background:var(--card);border:1px solid var(--border);
   display:flex;align-items:center;justify-content:center;
   color:var(--muted);text-decoration:none;font-size:.8rem;
-  transition:all .3s;cursor:none;
+  transition:all .3s;
 }
 .social-btn:hover{border-color:rgba(0,240,255,0.4);color:var(--accent);background:rgba(0,240,255,0.05)}
 
@@ -294,15 +292,12 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
   section{padding:5rem 4%}
   .hero h1{letter-spacing:-1px}
   .process-grid::before{display:none}
-  body{cursor:auto}
-  #cursor,#cursor-glow{display:none}
 }
 </style>
 </head>
 <body>
 
 <canvas id="icon-canvas"></canvas>
-
 
 <nav id="navbar">
   <div class="logo">Viphrud Technologies<span class="logo-dot">.</span></div>
@@ -510,7 +505,7 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
     <h2 class="section-title">Ready to Build Something<br><span class="gradient-text">Extraordinary?</span></h2>
     <p class="section-sub">Tell us about your project and we'll get back to you within 24 hours with a tailored proposal.</p>
     <div class="hero-btns" style="margin-top:2.5rem">
-      <a href="/cdn-cgi/l/email-protection#ddb5b8b1b1b29dabb4adb5afa8b9f3beb2b0" class="btn-primary"><span class="__cf_email__" data-cfemail="a7cfc2cbcbc8e7d1ced7cfd5d2c389c4c8ca">[email&#160;protected]</span></a>
+      <a href="mailto:hello@viphrud.com" class="btn-primary">hello@viphrud.com</a>
       <a href="tel:+91 9148728776" class="btn-ghost">📞 Call Us</a>
     </div>
   </div>
@@ -536,113 +531,72 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 (function(){
-
-
 
   /* ── FLOATING TECH ICONS CANVAS ── */
   const canvas=document.getElementById('icon-canvas');
   const ctx=canvas.getContext('2d');
   let W,H;
-
   function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}
   resize();
   window.addEventListener('resize',resize);
 
-  // SVG-path based icon drawers — each receives (ctx, cx, cy, size, alpha)
-  const iconDrawers = [
-
-    // Monitor / Desktop
+  const iconDrawers=[
     function drawMonitor(c,x,y,s,a){
       c.strokeStyle=`rgba(0,240,255,${a})`;c.lineWidth=s*.05;c.lineJoin='round';
-      const w=s*.8,h=s*.55,r=s*.06;
-      const lx=x-w/2,ty=y-h/2;
+      const w=s*.8,h=s*.55,r=s*.06;const lx=x-w/2,ty=y-h/2;
       c.beginPath();c.roundRect(lx,ty,w,h,r);c.stroke();
-      // stand
       c.beginPath();c.moveTo(x-s*.15,ty+h);c.lineTo(x-s*.15,y+s*.28);c.lineTo(x+s*.15,y+s*.28);c.lineTo(x+s*.15,ty+h);c.stroke();
-      // base
       c.beginPath();c.moveTo(x-s*.25,y+s*.28);c.lineTo(x+s*.25,y+s*.28);c.stroke();
-      // screen inner line
       c.beginPath();c.moveTo(lx+s*.08,ty+h-s*.12);c.lineTo(lx+w-s*.08,ty+h-s*.12);c.stroke();
     },
-
-    // Smartphone / Android
     function drawPhone(c,x,y,s,a){
       c.strokeStyle=`rgba(168,85,247,${a})`;c.lineWidth=s*.05;c.lineJoin='round';
       const w=s*.38,h=s*.7,r=s*.08;
       c.beginPath();c.roundRect(x-w/2,y-h/2,w,h,r);c.stroke();
-      // home button dot
       c.beginPath();c.arc(x,y+h/2-s*.09,s*.04,0,Math.PI*2);c.stroke();
-      // camera dot
       c.beginPath();c.arc(x,y-h/2+s*.09,s*.03,0,Math.PI*2);c.stroke();
     },
-
-    // Laptop
     function drawLaptop(c,x,y,s,a){
       c.strokeStyle=`rgba(0,240,255,${a})`;c.lineWidth=s*.05;c.lineJoin='round';
       const sw=s*.8,sh=s*.5,r=s*.05;
-      // screen
       c.beginPath();c.roundRect(x-sw/2,y-sh-s*.04,sw,sh,r);c.stroke();
-      // base
-      c.beginPath();c.moveTo(x-sw/2-s*.1,y+s*.06);c.lineTo(x+sw/2+s*.1,y+s*.06);
-      c.lineTo(x+sw/2,y-s*.04);c.lineTo(x-sw/2,y-s*.04);c.closePath();c.stroke();
+      c.beginPath();c.moveTo(x-sw/2-s*.1,y+s*.06);c.lineTo(x+sw/2+s*.1,y+s*.06);c.lineTo(x+sw/2,y-s*.04);c.lineTo(x-sw/2,y-s*.04);c.closePath();c.stroke();
     },
-
-    // Tablet / iPad
     function drawTablet(c,x,y,s,a){
       c.strokeStyle=`rgba(244,114,182,${a})`;c.lineWidth=s*.05;c.lineJoin='round';
       const w=s*.55,h=s*.72,r=s*.07;
       c.beginPath();c.roundRect(x-w/2,y-h/2,w,h,r);c.stroke();
-      // home button
       c.beginPath();c.arc(x,y+h/2-s*.1,s*.05,0,Math.PI*2);c.stroke();
-      // camera
       c.beginPath();c.arc(x,y-h/2+s*.1,s*.03,0,Math.PI*2);c.stroke();
     },
-
-    // Cloud
     function drawCloud(c,x,y,s,a){
       c.strokeStyle=`rgba(0,240,255,${a})`;c.lineWidth=s*.05;c.lineJoin='round';
       c.beginPath();
       c.arc(x-s*.18,y+s*.08,s*.2,Math.PI*.6,Math.PI*1.9);
       c.arc(x-s*.05,y-s*.1,s*.22,Math.PI,0);
       c.arc(x+s*.2,y+s*.04,s*.18,Math.PI*1.3,0);
-      c.lineTo(x+s*.38,y+s*.22);c.lineTo(x-s*.38,y+s*.22);c.closePath();
-      c.stroke();
+      c.lineTo(x+s*.38,y+s*.22);c.lineTo(x-s*.38,y+s*.22);c.closePath();c.stroke();
     },
-
-    // Code brackets </>
     function drawCode(c,x,y,s,a){
       c.strokeStyle=`rgba(168,85,247,${a})`;c.lineWidth=s*.06;c.lineJoin='round';c.lineCap='round';
-      // <
       c.beginPath();c.moveTo(x-s*.12,y-s*.22);c.lineTo(x-s*.32,y);c.lineTo(x-s*.12,y+s*.22);c.stroke();
-      // >
       c.beginPath();c.moveTo(x+s*.12,y-s*.22);c.lineTo(x+s*.32,y);c.lineTo(x+s*.12,y+s*.22);c.stroke();
-      // /
       c.beginPath();c.moveTo(x+s*.08,y-s*.22);c.lineTo(x-s*.08,y+s*.22);c.stroke();
     },
-
-    // Docker-style whale / container box
     function drawDocker(c,x,y,s,a){
       c.strokeStyle=`rgba(0,240,255,${a})`;c.lineWidth=s*.05;c.lineJoin='round';
-      // three stacked boxes
       const bw=s*.6,bh=s*.18,gap=s*.04;
-      for(let i=0;i<3;i++){
-        const by=y-s*.28+(bh+gap)*i;
-        c.beginPath();c.roundRect(x-bw/2,by,bw,bh,s*.03);c.stroke();
-      }
-      // base line
+      for(let i=0;i<3;i++){const by=y-s*.28+(bh+gap)*i;c.beginPath();c.roundRect(x-bw/2,by,bw,bh,s*.03);c.stroke();}
       c.beginPath();c.moveTo(x-bw/2-s*.1,y+s*.32);c.lineTo(x+bw/2+s*.1,y+s*.32);c.stroke();
     },
-
-    // Gear / Settings
     function drawGear(c,x,y,s,a){
       c.strokeStyle=`rgba(244,114,182,${a})`;c.lineWidth=s*.05;
       const teeth=8,outer=s*.38,inner=s*.26,core=s*.15;
       c.beginPath();
       for(let i=0;i<teeth;i++){
-        const a1=((Math.PI*2)/teeth)*i,a2=a1+Math.PI/teeth;
-        const a3=a2+Math.PI/teeth,a4=a3+Math.PI/teeth;
+        const a1=((Math.PI*2)/teeth)*i,a2=a1+Math.PI/teeth,a3=a2+Math.PI/teeth,a4=a3+Math.PI/teeth;
         if(i===0)c.moveTo(x+Math.cos(a1)*outer,y+Math.sin(a1)*outer);
         else c.lineTo(x+Math.cos(a1)*outer,y+Math.sin(a1)*outer);
         c.lineTo(x+Math.cos(a2)*inner,y+Math.sin(a2)*inner);
@@ -652,104 +606,60 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
       c.closePath();c.stroke();
       c.beginPath();c.arc(x,y,core,0,Math.PI*2);c.stroke();
     },
-
-    // Database / cylinder
     function drawDB(c,x,y,s,a){
       c.strokeStyle=`rgba(168,85,247,${a})`;c.lineWidth=s*.05;c.lineJoin='round';
       const rw=s*.35,rh=s*.12,ch=s*.55;
-      // top ellipse
       c.beginPath();c.ellipse(x,y-ch/2,rw,rh,0,0,Math.PI*2);c.stroke();
-      // sides
       c.beginPath();c.moveTo(x-rw,y-ch/2);c.lineTo(x-rw,y+ch/2);c.stroke();
       c.beginPath();c.moveTo(x+rw,y-ch/2);c.lineTo(x+rw,y+ch/2);c.stroke();
-      // bottom ellipse
       c.beginPath();c.ellipse(x,y+ch/2,rw,rh,0,0,Math.PI*2);c.stroke();
-      // mid stripe
       c.beginPath();c.ellipse(x,y,rw,rh,0,0,Math.PI*2);c.stroke();
     },
-
-    // Windows logo (4 squares)
     function drawWindows(c,x,y,s,a){
       c.strokeStyle=`rgba(0,240,255,${a})`;c.lineWidth=s*.045;c.lineJoin='round';
       const sq=s*.24,gap=s*.06;
-      // top-left
       c.beginPath();c.roundRect(x-sq-gap/2,y-sq-gap/2,sq,sq,s*.03);c.stroke();
-      // top-right
       c.beginPath();c.roundRect(x+gap/2,y-sq-gap/2,sq,sq,s*.03);c.stroke();
-      // bottom-left
       c.beginPath();c.roundRect(x-sq-gap/2,y+gap/2,sq,sq,s*.03);c.stroke();
-      // bottom-right
       c.beginPath();c.roundRect(x+gap/2,y+gap/2,sq,sq,s*.03);c.stroke();
     },
-
-    // Terminal / command prompt
     function drawTerminal(c,x,y,s,a){
       c.strokeStyle=`rgba(244,114,182,${a})`;c.lineWidth=s*.05;c.lineJoin='round';c.lineCap='round';
       const w=s*.75,h=s*.55,r=s*.07;
       c.beginPath();c.roundRect(x-w/2,y-h/2,w,h,r);c.stroke();
-      // top bar
       c.beginPath();c.moveTo(x-w/2,y-h/2+s*.16);c.lineTo(x+w/2,y-h/2+s*.16);c.stroke();
-      // dots
       for(let i=0;i<3;i++){c.beginPath();c.arc(x-w/2+s*.12+i*s*.1,y-h/2+s*.08,s*.03,0,Math.PI*2);c.fill();}
-      // prompt >_
       c.beginPath();c.moveTo(x-w/2+s*.1,y);c.lineTo(x-w/2+s*.22,y+s*.1);c.lineTo(x-w/2+s*.1,y+s*.2);c.stroke();
       c.beginPath();c.moveTo(x-w/2+s*.28,y+s*.2);c.lineTo(x-w/2+s*.44,y+s*.2);c.stroke();
     },
-
-    // WiFi signal
     function drawWifi(c,x,y,s,a){
       c.strokeStyle=`rgba(0,240,255,${a})`;c.lineWidth=s*.06;c.lineCap='round';
-      const arcs=[.42,.28,.15];
-      arcs.forEach((r,i)=>{
-        c.beginPath();c.arc(x,y+s*.2,s*r,Math.PI*1.2,Math.PI*1.8);c.stroke();
-      });
+      [.42,.28,.15].forEach(r=>{c.beginPath();c.arc(x,y+s*.2,s*r,Math.PI*1.2,Math.PI*1.8);c.stroke();});
       c.beginPath();c.arc(x,y+s*.2,s*.05,0,Math.PI*2);c.fillStyle=`rgba(0,240,255,${a})`;c.fill();
     },
-
   ];
 
-  // Spawn icons
   const icons=[];
-  const COUNT=22;
-
   function randomIcon(){
     const size=28+Math.random()*28;
     return {
-      x:Math.random()*W,
-      y:Math.random()*H,
-      size,
+      x:Math.random()*W,y:Math.random()*H,size,
       draw:iconDrawers[Math.floor(Math.random()*iconDrawers.length)],
-      vx:(Math.random()-.5)*.35,
-      vy:(Math.random()-.5)*.35,
-      rotation:Math.random()*Math.PI*2,
-      rotSpeed:(Math.random()-.5)*.004,
-      alpha:0.06+Math.random()*0.1,
-      pulse:Math.random()*Math.PI*2,
-      pulseSpeed:0.01+Math.random()*0.02,
+      vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,
+      rotation:Math.random()*Math.PI*2,rotSpeed:(Math.random()-.5)*.004,
+      alpha:0.06+Math.random()*0.1,pulse:Math.random()*Math.PI*2,pulseSpeed:0.01+Math.random()*0.02,
     };
   }
-
-  for(let i=0;i<COUNT;i++) icons.push(randomIcon());
+  for(let i=0;i<22;i++) icons.push(randomIcon());
 
   function loop(){
     ctx.clearRect(0,0,W,H);
     icons.forEach(ic=>{
-      ic.x+=ic.vx; ic.y+=ic.vy;
-      ic.rotation+=ic.rotSpeed;
-      ic.pulse+=ic.pulseSpeed;
+      ic.x+=ic.vx;ic.y+=ic.vy;ic.rotation+=ic.rotSpeed;ic.pulse+=ic.pulseSpeed;
       const a=ic.alpha*(0.7+0.3*Math.sin(ic.pulse));
-
-      // wrap around edges
-      if(ic.x<-ic.size*1.5) ic.x=W+ic.size;
-      if(ic.x>W+ic.size*1.5) ic.x=-ic.size;
-      if(ic.y<-ic.size*1.5) ic.y=H+ic.size;
-      if(ic.y>H+ic.size*1.5) ic.y=-ic.size;
-
-      ctx.save();
-      ctx.translate(ic.x,ic.y);
-      ctx.rotate(ic.rotation);
-      ic.draw(ctx,0,0,ic.size,a);
-      ctx.restore();
+      if(ic.x<-ic.size*1.5)ic.x=W+ic.size;if(ic.x>W+ic.size*1.5)ic.x=-ic.size;
+      if(ic.y<-ic.size*1.5)ic.y=H+ic.size;if(ic.y>H+ic.size*1.5)ic.y=-ic.size;
+      ctx.save();ctx.translate(ic.x,ic.y);ctx.rotate(ic.rotation);ic.draw(ctx,0,0,ic.size,a);ctx.restore();
     });
     requestAnimationFrame(loop);
   }
@@ -781,3 +691,13 @@ footer{padding:3rem 6%;border-top:1px solid var(--border);position:relative;z-in
   /* ── CARD MOUSE SPOTLIGHT ── */
   document.querySelectorAll('.service-card').forEach(card=>{
     card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+      card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
